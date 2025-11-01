@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /chs.html
+Disallow: /2chs.html
+Disallow: /ey.html
+Disallow: /droneup.html
+Disallow: /surgical.html
+Disallow: /pointclickcare.html

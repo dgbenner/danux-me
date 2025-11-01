@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AI Design and Research for User Experience</title>
+    <meta name="description" content="Dan Benner is a Nielsen Norman Master Certified UX Strategist, UX Product Designer, and UX Researcher Minneapolis St Paul Minnesota or Remote">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto:300,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+      
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-3285885-8', 'auto');
+      ga('send', 'pageview');
+    </script>
+        
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1524932,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>      
+
+        <!--  MS Clarity -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "sdtdy4gu9r");
+    </script>
+      
+  </head>
+    
+  <body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-light" style="background-color: #EDEEF0;">
+            <div class="container">
+                <div class="nav-button text-center">
+                    <img src="img/10_nav_images/nav_button_default.svg" class="navbar-toggler nav-border" data-toggle="collapse" data-target="#navbarNavDropdown" >
+            <!--        <i class="fas fa-adjust" data-toggle="collapse" data-target="#navbarNavDropdown" ></i>  -->
+               <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                -->
+                </div>    
+                  <div class="collapse navbar-collapse custom-collapse" id="navbarNavDropdown">
+                    <div class="custom-nav nav-box-shadow">
+                        <div class="row mt-3">
+                            <div class="col-md-2 mb-3">
+                                <a class="nav-header-text" href="index.html">Home</a>
+                            </div>                                
+
+                            <div class="col-md-3 mb-3">
+                                <span class="nav-header-text">Work</span>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="bestbuy.html">Best Buy</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/biworldwide.html">BI Worldwide</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/2chs.html">CHS</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/coach.html">Coach</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/dhhs.html">Dept. of Health<br>and Human Services</a>                                
+                            </div> 
+                            
+                            <div class="col-md-3 mb-3">
+                                    <span class="nav-header-text"></span>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/droneup.html">DroneUp</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/ey.html">EY</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/surgical.html">Intuitive Surgical</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/kudo.html">KUDO</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/nagios.html">Nagios</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/pointclickcare.html">PointClickCare</a>
+                            </div>         
+                            
+                            
+                            
+                            <div class="col-md-2">
+                                <a class="nav-header-text" href="about.html">About</a>
+                            </div> 
+                            <div class="col-md-2">
+                                <a class="nav-header-text" data-toggle="modal" data-target="#exampleModalCenter">Contact</a>
+                                <h5 class="mt-2">
+                                    benner.dan@gmail.com<br>
+                                    843.504.7221<br>
+                                </h5>
+                            </div>    
+                        </div>      
+                    </div>  
+                  </div>
+            </div>
+          </nav>
+    </header>
+      
+     
+
+        <section class="pt-4">
+            <div class="custom-container mt-5">
+                
+                <div class="row case_study_container mt-3 box-shadow">
+                    <div class="col-md-8">
+                        
+                        <div class="animated fadeIn card-animation-fourth mb-2">
+                        <img class="corner_img" src="img/01_best_buy/00-lead.png" style="width:100%;">
+                        </div>
+
+                        <div class="animated fadeIn card-animation-sixth mb-2 caption_photo">
+                        <img class="corner_img" src="img/01_best_buy/a_selfdiagnosis/mocks/bestbuy_techtriage-macbook.png" style="width:100%;">
+                        <span class="caption_bottom_left">Device Inventory (tablet) and Intro Page (mobile)</span>
+                        </div>
+                        
+  
+
+                        
+                        
+                        
+                        <div class="row mt-3 mb-3">
+
+                        
+ 
+                
+                        
+                        </div>
+
+                        
+
+
+
+                    </div>
+                    <div class="animated fadeIn card-animation-sixth col-md-4 pl-5">
+
+                        <div class="alert alert-warning" role="alert">
+                        This is a work in progress cataloging my AI efforts. 
+                        </div>
+
+
+                        <h2>Project 1: Best Buy/h2>
+                            <h3>AI-Assisted Self-Diagnosis</h3>
+                        <br>
+
+                        <h5><p><a href="https://www.bestbuy.com/services/triage/home" target="_blank">
+                            Best Buy's AI-Assisted Self-Diagnosis</a> 
+                            is a fully responsive, concept-to-release microsite 
+                            embedded in BestBuy.com <strong>to help customers 
+                            self-assess hardware and software issues with 
+                            the power of Geek Squad's twenty-five years
+                            of call transcripts and troubleshooting models.</strong></p>
+                            
+                            The application leverages three facets 
+                            of artificial intelligence: 
+                            <br>
+                            <br>
+                                
+                            <ul>           
+                            <li>Conversational Design</li>    
+                            <li>Machine Learning</li>
+                            <li>Automated Handling</li>         
+                            </ul>
+                            
+                            <br>
+                        
+                            </h5>
+                            
+
+                                <br>
+                        
+                                <h4>Project Listing</h4>
+                                    <h5>
+                                        
+                                        
+                                        <p>
+
+                                    In regard to AI, I'd designed a conversational system 
+                                            for Best Buy. It was a laptop triage, but then 
+                                            was applied to all their service areas. 
+                                            I then, and still see AI as an 'umbrella' 
+                                            term, and this application focused in on a few facets 
+                                            (like Conversational Design and Machine Learning).
+                                            <br>
+                                    http://danux.me/bestbuy.html
+<br>
+                                    Facets of AI
+                                    https://bit.ly/4dfrH0Y
+<br>
+                                    Conversational System Design
+                                    https://bit.ly/4d9j3Bz
+<br>
+                                    Microinteractions Study
+                                    https://bit.ly/3Yd520Z
+<br>
+
+
+
+                                    And recently I'd co-designed a concept-only prototype for a veteran benefits app. I took a deep dive on a practical AI strategy for adding AI facets— starting with simple states like correcting grammar to a machine learning feedback loop for optimizing the maximum payouts for veterans. 
+
+                                    AI Strategy for Vetavize
+                                    https://bit.ly/4dxJqAX
+<br>
+                                            
+                                            
+                                    Gen-AI for Lore
+<br>
+• personas, persona conversation generation<br>
+                                            •gen-ai topic generation<br>
+                                              •working with ML and therapists for conversation dynamics (tone, cadence, reply type) <br>
+                                            •personality profiles<br>
+
+
+                                        
+                                        </p>
+                                    </h5>
+                                 <br>  
+
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+
+                                <br>
+
+
+
+                        <a class="btn-case-study bby_btn" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Read more &#9658;
+                        </a>
+                        
+     
+                    <!-- End Text Column-->                 
+                    </div>
+                </div>
+            </div>    
+        </section>      
+            
+
+            <section class="pt-4">
+            <div class="custom-container mt-5">
+                
+                <div class="row case_study_container mt-3 box-shadow">
+                    <div class="col-md-8">
+                        
+                        <div class="animated fadeIn card-animation-fourth mb-2">
+                        <img class="corner_img" src="img/01_best_buy/00-lead.png" style="width:100%;">
+                        </div>
+
+                        <div class="animated fadeIn card-animation-sixth mb-2 caption_photo">
+                        <img class="corner_img" src="img/01_best_buy/a_selfdiagnosis/mocks/bestbuy_techtriage-macbook.png" style="width:100%;">
+                        <span class="caption_bottom_left">Device Inventory (tablet) and Intro Page (mobile)</span>
+                        </div>
+                        
+                        
+
+
+                        <div class="animated fadeIn card-animation-eighth mb-2">
+                        <img class="corner_img" src="img/01_best_buy/a_selfdiagnosis/mocks/walkthewall.JPG" style="width:100%;">
+                        </div>
+                        
+                        
+                        <div class="row mt-3 mb-3">
+                            <div class="col-md-6">
+                                <a class="artifacts-text" href="https://drive.google.com/file/d/1ANmL2RcJbDG7ijUpHdXyH0vobepsR4Sz/view?usp=sharing" target="_blank">                         
+                                <img class="corner_img" src="img/01_best_buy/a_selfdiagnosis/mocks/100-aipreview.png" style="width:100%;">
+                                </a>
+                                </div>
+                            
+                            <div class="col-md-6">
+                            <a class="artifacts-text" href="https://drive.google.com/file/d/1bJ3sTAJyiUiB9t7-zCSISR3Zqad0-4kb/view?usp=sharing" target="_blank">                             
+                                <img class="corner_img" src="img/01_best_buy/a_selfdiagnosis/mocks/99-journeypreview.png" style="width:100%;">
+                            </a>
+                            </div>
+                        </div>
+
+                        
+                        
+                        
+                        <div class="row mt-3 mb-3">
+
+                        
+                        <div class="col-md-6">
+                            <a class="artifacts-text" href="https://drive.google.com/file/d/1fo_D81eCBdz-ZJP1ywX0JYTFO1C_nDVu/view?usp=sharing" target="_blank">
+                        <img class="corner_img" src="img/01_best_buy/a_selfdiagnosis/mocks/Whitepaper1.png" style="width:100%;">
+                            </a> 
+                        </div>
+                        
+                        <div class="col-md-6">
+                        <a class="artifacts-text" href="https://drive.google.com/file/d/1cOcxjiVeGn1yx4052fQZ-Xoa4z6m5kp3/view?usp=sharing" target="_blank">
+                        <img class="corner_img" src="img/01_best_buy/a_selfdiagnosis/mocks/Whitepaper2.png" style="width:100%;">
+                        </a>
+                            </div>
+                        
+                        </div>
+
+                        
+
+
+
+                    </div>
+                    <div class="animated fadeIn card-animation-sixth col-md-4 pl-5">
+
+                        <div class="alert alert-warning" role="alert">
+                        This is a work in progress cataloging my AI efforts. 
+                        </div>
+
+
+                        <h2>Project 2: Vetavize/h2>
+                            <h3>AI-Assisted Veterans Benefits App</h3>
+                        <br>
+
+                        <h5><p><a href="https://www.bestbuy.com/services/triage/home" target="_blank">
+                            ##################</p>
+                            
+                            The application leverages three facets 
+                            of artificial intelligence: 
+                            <br>
+                            <br>
+                                
+                            <ul>           
+                            <li>Conversational Design</li>    
+                            <li>Machine Learning</li>
+                            <li>Automated Handling</li>         
+                            </ul>
+                            
+                            <br>
+                        
+                            </h5>
+                            
+
+                                <br>
+                        
+                                <h4>Project Listing</h4>
+                                    <h5>
+                                        
+                                        
+                                        <p>
+
+                                    In regard to AI, I'd designed a conversational system 
+                                            for Best Buy. It was a laptop triage, but then 
+                                            was applied to all their service areas. 
+                                            I then, and still see AI as an 'umbrella' 
+                                            term, and this application focused in on a few facets 
+                                            (like Conversational Design and Machine Learning).
+                                            <br>
+                                    http://danux.me/bestbuy.html
+<br>
+                                    Facets of AI
+                                    https://bit.ly/4dfrH0Y
+<br>
+                                    Conversational System Design
+                                    https://bit.ly/4d9j3Bz
+<br>
+                                    Microinteractions Study
+                                    https://bit.ly/3Yd520Z
+<br>
+
+
+
+                                    And recently I'd co-designed a concept-only prototype for a veteran benefits app. I took a deep dive on a practical AI strategy for adding AI facets— starting with simple states like correcting grammar to a machine learning feedback loop for optimizing the maximum payouts for veterans. 
+
+                                    AI Strategy for Vetavize
+                                    https://bit.ly/4dxJqAX
+<br>
+                                            
+                                            
+                                    Gen-AI for Lore
+<br>
+• personas, persona conversation generation<br>
+                                            •gen-ai topic generation<br>
+                                              •working with ML and therapists for conversation dynamics (tone, cadence, reply type) <br>
+                                            •personality profiles<br>
+
+
+                                        
+                                        </p>
+                                    </h5>
+                                 <br>  
+
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+
+                                <br>
+
+
+
+                        <a class="btn-case-study bby_btn" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Read more &#9658;
+                        </a>
+                        
+     
+                    <!-- End Text Column-->                 
+                    </div>
+                </div>
+            </div>    
+        </section>      
+
+      
+      
+      
+      
+      
+      
+
+    <section>
+        <div class="end-page-margin"> </div>    
+    </section> 
+      
+      
+
+<script>
+    let body = document.querySelector("body")
+    let nav = document.querySelector(".custom-collapse")
+    let toggler = document.querySelector(".navbar-toggler")
+
+    body.addEventListener("click", function(){
+        if(event.target===toggler){
+            return
+        }
+        else{
+            nav.classList.remove("show")
+        }
+    })
+</script>
+          
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+      <!-- Default Statcounter code for danux.me http://www.danux.me -->
+<script type="text/javascript">
+var sc_project=12249368; 
+var sc_invisible=1; 
+var sc_security="0160819f"; 
+var sc_https=1; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12249368/0/0160819f/1/" alt="Web Analytics Made
+Easy - StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+    
+    </body>
+</html>

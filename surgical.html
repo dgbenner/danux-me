@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Intuitive Surgical: Robotic-Assisted Surgery Training Application</title>
+    <meta name="description" content="Dan Benner is a Nielsen Norman Master Certified UX Strategist, UX Product Designer, and UX Researcher Minneapolis St Paul Minnesota or Remote">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto:300,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://kit.fontawesome.com/4dcdc8568a.js" crossorigin="anonymous"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-3285885-8', 'auto');
+      ga('send', 'pageview');
+    </script>
+        
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1524932,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>      
+
+        <!--  MS Clarity -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "sdtdy4gu9r");
+    </script>
+      
+  </head>
+    
+  <body>
+       
+    <header>
+        <nav class="navbar fixed-top navbar-light" style="background-color: #EDEEF0;">
+            <div class="container">
+                <div class="nav-button text-center">
+                    <img src="img/10_nav_images/nav_button_default.svg" class="navbar-toggler nav-border" data-toggle="collapse" data-target="#navbarNavDropdown" >
+            <!--        <i class="fas fa-adjust" data-toggle="collapse" data-target="#navbarNavDropdown" ></i>  -->
+               <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                -->
+                </div>    
+                  <div class="collapse navbar-collapse custom-collapse" id="navbarNavDropdown">
+                    <div class="custom-nav nav-box-shadow">
+                        <div class="row mt-3">
+                            <div class="col-md-2 mb-3">
+                                <a class="nav-header-text" href="index.html">Home</a>
+                            </div>         
+                            
+                            
+                            <div class="col-md-3 mb-3">
+                                <span class="nav-header-text">Work</span>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="bestbuy.html">Best Buy</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/biworldwide.html">BI Worldwide</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/2chs.html">CHS</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/coach.html">Coach</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/dhhs.html">Dept. of Health<br>and Human Services</a>                                
+                            </div> 
+                            
+                            <div class="col-md-3 mb-3">
+                                    <span class="nav-header-text"></span>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/droneup.html">DroneUp</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/ey.html">EY</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/surgical.html">Intuitive Surgical</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/kudo.html">KUDO</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/nagios.html">Nagios</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/pointclickcare.html">PointClickCare</a>
+                            </div>         
+                            
+                            
+                            <div class="col-md-2">
+                                <a class="nav-header-text" href="about.html">About</a>
+                            </div> 
+                            <div class="col-md-2">
+                                <a class="nav-header-text" data-toggle="modal" data-target="#exampleModalCenter">Contact</a>
+                                <h5 class="mt-2">
+                                    benner.dan@gmail.com<br>
+                                    843.504.7221<br>
+                                </h5>
+                            </div>    
+                        </div>      
+                    </div>  
+                  </div>
+            </div>
+          </nav>
+    </header>
+
+      
+      
+        <section class="pt-4">
+            <div class="custom-container mt-5">
+                <div class="row case_study_container box-shadow">
+                    <div class="col-md-8">
+                        
+                    
+                        <div class="animated fadeIn card-animation-first mb-2">
+                        <img class="corner_img" src="/img/11_surgical/00-introslide.png" style="width:100%;">
+                        </div>
+                    
+                        <div class="animated fadeIn card-animation-second mb-2">
+                            <a class="artifacts-text" href="/img/11_surgical/01-Research%20Approach.png" target="_blank">                       
+                        <img class="corner_img" src="/img/11_surgical/01-Research%20Approach.png" style="width:100%;">
+                            </a>
+                        </div>
+                    
+                        <!--
+                        <div class="animated fadeIn card-animation-third mb-2">
+                            <a class="artifacts-text" href="/img/11_surgical/02-davincipic.png" target="_blank">                       
+                        <img class="corner_img" src="/img/11_surgical/02-davincipic.png" style="width:100%;">
+                            </a>
+                        <span class="caption_bottom_left">Simulation task picking up and relocating plastic cones</span>
+
+                        </div>
+                        -->
+                    
+                                            
+                        <div class="animated fadeIn card-animation-third mb-2">
+                            <a class="artifacts-text" href="/img/11_surgical/02%20ProductMaturityTriangle.png" target="_blank">                       
+                        <img class="corner_img" src="/img/11_surgical/02%20ProductMaturityTriangle.png" style="width:100%;">
+                            </a>
+                        </div>
+                        
+                        <div class="animated fadeIn card-animation-third mb-2">
+                        <img class="corner_img" src="/img/11_surgical/03_UX-StrategistQuote.png" style="width:100%;">
+                        </div>
+                        
+                        
+                                                                        
+                        <div class="animated fadeIn card-animation-third mb-2">
+                            <a class="artifacts-text" href="/img/11_surgical/03%20Strategy%20Plan.png" target="_blank">                       
+                                    <img class="corner_img" src="/img/11_surgical/03%20Strategy%20Plan.png" style="width:100%;">
+                            </a>
+                                </div>
+                    
+                                                
+                        <div class="animated fadeIn card-animation-third mb-2">
+                            <a class="artifacts-text" href="/img/11_surgical/04%20Affinity%20Map.png" target="_blank">                       
+                                    <img class="corner_img" src="/img/11_surgical/04%20Affinity%20Map.png" style="width:100%;">
+                            </a>
+                                </div>
+                    
+                        <div class="animated fadeIn card-animation-third mb-2">
+                            <a class="artifacts-text" href="/img/11_surgical/05%20Objectives.png" target="_blank">                       
+                        <img class="corner_img" src="/img/11_surgical/05%20Objectives.png" style="width:100%;">
+                            </a>
+                        </div>
+                    
+                        
+                        <div class="animated fadeIn card-animation-third mb-2">
+                        <img class="corner_img" src="/img/11_surgical/06-GartnerQuote.png" style="width:100%;">
+                        </div>
+                    
+                        <div class="animated fadeIn card-animation-third mb-2">
+                            <a class="artifacts-text" href="/img/11_surgical/07-NotHavingUXStrategy.png" target="_blank">                       
+                        <img class="corner_img" src="/img/11_surgical/07-NotHavingUXStrategy.png" style="width:100%;">
+                            </a>
+                        </div>
+                          
+
+
+
+
+
+                                                        
+                    </div>
+
+
+
+                
+                
+                
+                    <div class="animated fadeIn card-animation-sixth col-md-4 pl-4">
+
+
+                        <h2>Intuitive Surgical</h2>
+                        <h3>Robotic-Assisted Surgery Training Platform</h3>
+                        <br>
+
+                       <h5><p>Intuitive Surgical is a Sunnyvale, California-based 
+                           company that develops and manufactures robotic surgery products.  
+                           </p>
+                        
+                        <p>Their highest profile product is the 3 to 4-armed 
+                            Da Vinci Surgical System. It is <strong> designed to 
+                            minimize the effects of surgery to improve 
+                            clinical outcomes in patients.</strong>
+                        </p>
+                        
+                           <hr>
+                           
+                        <i>
+                            <p>Because of the degree of precision and dexterity 
+                                of the robotic arms and tooling, patients experience
+                                very little trauma—and they heal 
+                                faster and more easily. Overall there is
+                                less pain, lower infection risk, reduced blood loss, 
+                                and fewer complications.
+                            </p>    
+
+                            <p>Currently, the best use is for laparoscopic surgery 
+                                (abdominal or pelvis—with a 1/2 inch incision—sometimes 
+                                called "keyhole surgery"), as well as lung and 
+                                esophagus-related surgeries.
+                            </p> 
+
+                            <p>In case you were planning on picking one up to make 
+                                fly-fishing lures or to tie your shoes, the 
+                                system runs about $1.5 million.
+                            </p> 
+                        </i>   
+                           
+                            <hr>
+
+
+                                                   
+                        <p>While every surgeon and care network wants better outcomes, 
+                            the path to becoming a robotic-assisted surgeon requires a 
+                            high degree of tutorial training, hardware expertise, a firm
+                            understanding of their personal technique and how it relates to 
+                            Da Vinci, as well as simulator time. 
+                        </p>
+                            
+                           
+                        <p><strong>The current state of Intuitive Surgical's Learning 
+                            Platform (the IL 9.0) is a very poor, potentially 
+                            unusable fully-custom web application and iOS / 
+                            Android counterparts.</strong>
+                        </p>
+                           
+                        <p>   
+                            The unfortunate state of the platform has led dedicated-to-learning 
+                            surgeons and care systems to "go rogue", creating Facebook and YouTube 
+                            groups for sharing methods and content.
+                        </p>
+                            
+                               
+                        </h5>
+                        
+                        
+                        
+                            <br>
+                        
+                            <h4>Objective</h4>
+                            <h5>Lead a product-level discovery to uncover
+                                and prioritize usability and feature needs for the 
+                                robotic-assisted-surgery Intuitive Surgical Learning Platform.</h5>
+                            <br>
+                        
+                
+                            <h4>Outcome</h4>
+                            <h5>
+                                 <p>After completing the synthesis, I mapped out a set of 
+                                    features designed to immediately enhance the usability 
+                                     of the application. These 
+                                    improvements focus on practical, linear enhancements 
+                                    to learnability, efficiency, memorability, 
+                                    and error reduction.</p>
+                        
+                                 <p>Since this was a fully custom, hand-coded platform, 
+                                    it lacked high quality UI elements (like Bootstrap 
+                                    or React would provide), such as functional and 
+                                    tested accordions, alerts, dropdowns, mouseover effects etc. 
+                                     These types of 
+                                    features can be implemented with minimal rework, 
+                                    design, involvement of decision-makers—and sometimes 
+                                    they can be as simple as a user story.</p>
+                                
+                                <br>
+                                                        
+                                 <p><strong>Sample of Immediate Impact Features: Adoption, 
+                                     Engagement, and Navigation:</strong></p>                                
+                                
+                            <ul>
+                                <li>Allow learners to provide feedback on content</li>
+                                <li>Breadcrumb navigation</li>
+                                <li>Consolidate catalogs into a single searchable, filterable index</li>
+                                <li>Display learners' progress</li>
+                                <li>Enhance / clarify onboarding process</li>
+                                <li>Explain the Intuitive Surgical learning methodology / philosophy</li>
+                                <li>Implement hover / click states for interaction</li>
+                                <li>Introduce peer comparison metrics</li>
+                                <li>Offer additional content within courses for tangential learning</li>
+                                <li>Pin headers, navigation, and filters</li>
+                                <li>Provide links or instructions for connecting to the simulator</li>
+                                <li>Utilize icons for wayfinding and recognizing content types</li>
+                                <li>Visualize the learning path and goals</li>
+
+                                </ul>
+                                <br>
+                  
+                                <p><i>Target timeframe: From now to 1-1.5 years</i>
+                                    </p>                                
+                                    
+                        
+                        </h5>
+                        <br>
+                        
+                        
+                        
+                        
+                        
+                            <h5>
+
+                                 <p>I also introduced a set of more complex features that required 
+                                     further definition but would contribute to a more enjoyable 
+                                     and engaging learning experience. This adaptable set of tactics 
+                                     could evolve as we gather more information about the learners or 
+                                     as new ideas emerge within the collective group. 
+                                     Most of these ideas were generated by me—based on the 
+                                     foundation of my research analysis.</p>
+                                <br>
+                                                        
+                                 <p><strong>Sample of Deeper Learning Experience Features: 
+                                     Retention, Milestone Completion, and Content Fluency</strong></p>                                
+                                
+                            <ul>
+                                  <li>Allow users to create a personalized "glossary" or bookmarks for valuable content</li>
+                                  <li>Connect learners' real-world events (e.g., completed surgeries, simulator time) to the learning platform for analysis and additional content</li>
+                                  <li>Enable users to set their own daily notification goals, triggers, or reminders for content and goals</li>
+                                  <li>Give learners paths forward to third-party content (e.g., YouTube) with Intuitive Surgical commentary / disclaimers</li>
+                                  <li>Implement "Hot Spot" / hyperlinking within courses to allow tangential learning</li>
+                                  <li>Include video metadata / indexed transcript / chapters for easier findability</li>
+                                  <li>Introduce an abstract motivator / metric to show learner progress (like Experience Points)</li>
+                                  <li>Suggest other available learning paths / skillsets</li>
+                                  <li>Tie learner's real-world events (e.g., completed surgery, simulator time) back to the learning platform for analysis, additional content</li>
+                                  <li>Utilize "spaced repetition" of content to stay fluent on learned skills</li>
+                            </ul>
+                            
+                                <br>
+                        
+                  
+                                <p><i>Target timeframe: 1 year and beyond</i>
+                                    </p>                                
+                                    
+                        
+                        </h5>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <br>
+                        
+                            <h4>Deliverables</h4>
+                                <h5>
+                                <a class="artifacts-text" href="https://drive.google.com/file/d/17T2UfA0avCJpQNsjQ3CvR64_9IP5kkaC/view?usp=sharing" target="_blank">
+                                            UX Strategy (Immediate Tasks)</a>
+                                            <br> From now to 1-1.5 years                              
+                                </h5>
+                        
+                                <h5>
+                                <a class="artifacts-text" href="https://drive.google.com/file/d/1Sv_k5Qij1DRcKh0iJQGbCUBJbVfwACtn/view?usp=sharing" target="_blank">
+                                            UX Strategy (Visionary Features)</a> 
+                                            <br> 1 year and beyond                             
+                                </h5>
+
+  
+           
+                                <br>
+                        
+                        <a class="btn-case-study bby_btn" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Read more &#9658;
+                        </a>
+                        
+                        <div class="collapse" id="collapseExample1">
+                            <div class="case-study-card-body">
+        
+
+                            <h4>Goals</h4>
+                            <h5>Adoption, Engagement, Curriculum Navigation</h5>              
+                             <br>
+                                
+                            <h4>Research Methodologies</h4>
+                            <h5><ul>
+                                <li>Customer Listening (Secondary)</li>
+                                <li>Customer Service Logs (Secondary)</li>
+                                <li>Surveys (Secondary)</li>
+                                <li>User Interviews (Secondary)</li>
+                                <li>Contextual Interviews / Inquiries (Limited)</li>
+                                <li>Heuristic evaluation (Limited)</li>
+                                </ul>
+                            </h5>
+                            <br>   
+
+                            <h4>Challenges</h4>
+                            <h5>
+                               <p>From the very beginning, I was eager to absorb insights from the research 
+                                   findings and collaborate closely with the human factors engineers and product owners.</p>
+                                
+                                <p>While I made significant progress with my interactions with the 
+                                HFEs, the UX Head did not want me to connect with the product 
+                                owners directly.</p>
+                                
+                                <p>I stressed the importance one-on-one interactions with the 
+                                    stakeholders— which I had emphasized as a critical part of 
+                                    discoveries during my interview process. The UX Head agreed 
+                                    to an introductory email, which unfortunately 
+                                    was postponed multiple times.</p>
+                                
+                                <p>Undeterred by the delays, I continued to voice the 
+                                    significance of engaging with the product owners. 
+                                    I believed that these interactions were crucial not 
+                                    only for my clarifications and learning, but also 
+                                    for building social connections, understanding 
+                                    their interests, and identifying any potential 
+                                    conflicts among stakeholders. </p>
+                                
+                                <p>In response, the UX Head eventually proposed a group meeting 
+                                    as an initial introduction, a suggestion I reluctantly 
+                                    accepted. My private plan was then to subsequently 
+                                    approach each product owner individually.</p>
+                                
+                                <p>A few days later, an interaction designer 
+                                    mentioned "when we do your workshop," revealing 
+                                    that the UX Head had been discussing a workshop with the 
+                                    product owners behind the scenes. I followed up with the
+                                    UX Head on purpose of this workshop—
+                                    and how I might want to know the details were I to
+                                    plan it. Given that we had already received 
+                                    substantial UI-related feedback and that I thought 
+                                    our objectives were aligned, I expressed my concerns 
+                                    to the UX Head, and she said they would want to 
+                                    be part of the solutioning process.</p>
+                                                               
+                                <p>I explained that such a workshop might duplicate 
+                                    efforts and sideline the basic UI challenges we 
+                                    were addressing. I had spent considerable time 
+                                    strategizing and collaborating with her on tactics 
+                                    over the past weeks, and her feedback had been consistently positive. </p>
+                                
+                                <p>I felt that delegating the solutioning process 
+                                    to a broad, cross-team workshop could potentially 
+                                    undervalue our work and come across as mere "UX Theater"
+                                    or "UX Lite".</p>
+                                
+                                <p>As an alternative, I proposed have a focused findings 
+                                    reveal session, which I believed could provide valuable 
+                                    insights and aid cross-team collaboration 
+                                    if needed for more visionary features.</p>
+                                
+                                <p>Over the next three weeks, I worked closely with 
+                                    the UX Head to shape a workshop plan. Although 
+                                    I vocalized my belief that this effort seemed 
+                                    disproportionate to the simple UI improvements, 
+                                    I remained committed to enhancing the process.</p>
+                            
+                                <p>Throughout this process, I made it clear that the 
+                                    direction we were taking diverged from my initial 
+                                    expectations and the notion of an efficient workflow. 
+                                    Despite my efforts, I found it challenging to receive 
+                                    a straightforward explanation for convening a large 
+                                    group of approximately 30 individuals to discuss straightforward UI matters.</p>
+                                
+                                <p>Additionally, I expressed it was unfair to the attendees to 
+                                    explain UX a as whole, explain our methodology, reveal findings,    
+                                    and then ask them to participate in ranking 
+                                    or solutioning within the same 3 hours.</p>
+
+                                <p>In the first 30 minutes of the presentation, a vocal 
+                                    PO expressed her thoughts on UX and the workshop itself: 
+                                    "Why are you doing this? This is our job. 
+                                    Your UX team needs to wait for us to tell you what 
+                                    feature to do—and we'll let you know when we need you to do something."</p>
+
+                                
+                                 <p>After a little more hostile discussion between the UX 
+                                     Head and the PO, the PO moved to end the meeting.</p>
+
+                                <p>The UX Head said she'd regroup—which she did, and 
+                                    concluded we should build a high-fidelity 
+                                    prototype of a fully-functional application that 
+                                    incorporates all of Intuitive Surgical's 
+                                    applications (actual DaVinci devices, surgical 
+                                    system, console, patient cart, learning, simulators, 
+                                    and AI-based solutioning) and present it to the broader 
+                                    product team as an entirely new system from scratch.</p>
+                                
+                                
+                                <p>I wholeheartedly disagreed with the siloed, Waterfall approach—citing it could 
+                                    take a year or more to even develop anything. (I found out later it's not Waterfall,
+                                    but more of a "Big Design Up Front" [BDUF] approach.) And that timeframe
+                                    didn't seem to bother the UX Head. I suggested we tackle the "known knowns" UI-centric issues
+                                    ourselves and bring the group in to show ad hoc concept models of more visionary features.  
+                                    (Either approach was outside the scope of the discovery project that I was brought on for.)</p>
+
+                                
+                                 <p>Contrary to all of this cultural conflict and misunderstanding of the roles 
+                                     of product and UX—and even the product model itself, I had delivered an 
+                                     actionable set of immediate features whose significance couldn't be denied. The larger, visionary features had a 
+                                     clear roadmap for discussion and exploration, 
+                                     all based on the intelligence I had learned through the discovery process 
+                                     and the basic tenets of UX. </p>
+
+                                                               
+                                                                                               
+                                
+                                
+                                
+                                
+                                </h5>
+                            <br>
+                 
+                            <h4>Team</h4>
+                            <h5>UX Researcher / Strategist (myself), Head of Experience, Director of Simulation,
+                                Human Factors Engineers (3), Interaction Designer (2)
+                            </h5>
+                            <br> 
+                                
+                            <h4>Competition</h4>
+                            <h5>Medtronic, Stryker, Sina Surgical System, ZEUS
+                            </h5>
+                            <br> 
+                                
+                            <h4>Next Steps</h4>
+                            <h5><ul>
+                                <li>Stakeholder Interviews (*blocked)</li>
+                                <li>Persona Creation</li>
+                                <li>Journey Map / Learning Path Creation</li>
+                                <li>Wireframing</li>
+                                
+                                </ul>
+                            </h5>
+                            <br>   
+
+
+                            <h4>Final Analysis </h4>
+                            <h5>
+                                <p>What I thought was a simple improvement 
+                                    process turned out to have cultural dynamics 
+                                    overshadowing the project.
+                                </p>
+                            
+                                <p>I should have been more clear and 
+                                    unrelenting to do one-on-ones with the stakeholders.
+                                    They deserve visibility to the process, and I could
+                                    have learned from their perspectives.
+                                    I did have a good deal of (although very basic) indirect 
+                                    feedback from them through the decks I'd reviewed.
+                                </p>
+                            
+                                <p>I'd assumed they would be open to simple usability 
+                                    improvements, and perhaps they were. The vocal PO 
+                                    shut down the discussion. 
+                                </p>
+                                                            
+                                <p>For good or bad, I typically have blind faith in my leadership 
+                                    within UX until I am proved wrong. I have learned multiple 
+                                    UX strategy methods from true 
+                                    experts in the business. I do have an even higher degree of trust 
+                                    on those learnings, but from situations like this—I need 
+                                    to have even more faith in them and myself. The basic principles 
+                                    of understanding the user and understanding the 
+                                    business needs are not trivial. And at the same 
+                                    time, a product team who doesn't think "visionarily"
+                                    will only stretch so far on their own. Relationship-building, 
+                                    trust and their knowledge of my discovery process 
+                                    is what is going to advance their thinking. 
+                                    And nothing is more "proof in the pudding" 
+                                    than a tiered, iterative improvement process. 
+                                </p>
+
+                                <p>If I were going to rework this project, 
+                                    I'd have kept all the UX strategy to myself, 
+                                    or immediate UX group, meet the stakeholders, 
+                                    and broadly address their needs within the UX strategy 
+                                    as the only or primary deliverable. This discovery project 
+                                    was too far outside their UX maturity level.  
+                                </p>
+
+                            
+                            
+                            </h5>
+
+
+
+                            <h4>Supporting Artifacts</h4>
+                            <h5>
+                                    <a class="artifacts-text" href="https://my.intuitive.com/" target="_blank">
+                                        Register for Intuitive Learning</a> (Link)<br>
+
+                                    <a class="artifacts-text" href="https://drive.google.com/file/d/1YdXt1YY9bUMrHUddBW0N5XuvnSk5JqQp/view?usp=sharing" target="_blank">
+                                        Current System Screenshots.pdf</a><br>
+                                
+                                
+                                    <a class="artifacts-text" href="https://drive.google.com/file/d/1IO5WNANoyk0_k7fc7SQ7l9oPqH_EebQw/view?usp=sharing" target="_blank">
+                                        Intuitive Surgical Design Maturity.pdf</a><br>
+                                
+                                
+                                    <a class="artifacts-text" href="https://drive.google.com/file/d/18htSwsfvYsJtaiWXnWCW7OPEzt6DU0BY/view?usp=sharing" target="_blank">
+                                     Affinity Map</a> (Details obscured)<br>
+                                
+                                    <a class="artifacts-text" href="https://drive.google.com/file/d/1K1tg431UqzqM5N_rEdgGTpIvHukPNv4W/view?usp=sharing" target="_blank">
+                                        Google Heart Framework.png</a><br>
+
+                                    <a class="artifacts-text" href="https://drive.google.com/file/d/1KrSHANOcr5lKsSObT8iuGkH_xOKBLTSG/view?usp=sharing" target="_blank">
+                                        Stakeholder Presentation and Workshop.pdf</a><br>
+
+                                
+                                    <a class="artifacts-text" href="https://www.youtube.com/watch?v=cBpziIkElD4" target="_blank">
+                                        IS Simulator Training Sample</a> (Link)<br>
+                                
+                                                                
+                                    <a class="artifacts-text" href="https://www.youtube.com/watch?v=NyS8g_5iT1Q" target="_blank">
+                                        Third Party Simulator Training Sample</a> (Link)<br>
+                      
+
+                            </h5>
+                            <br>
+     
+                    <!-- End Accordion Card-->                 
+                    </div>
+                    </div>          
+
+                        
+                        
+                    <!-- End Text Column-->                 
+                    </div>
+                </div>
+            </div>    
+        </section>      
+            
+            
+    
+
+
+
+    <section>
+        <div class="end-page-margin"> </div>    
+    </section> 
+
+      
+
+<script>
+    let body = document.querySelector("body")
+    let nav = document.querySelector(".custom-collapse")
+    let toggler = document.querySelector(".navbar-toggler")
+
+    body.addEventListener("click", function(){
+        if(event.target===toggler){
+            return
+        }
+        else{
+            nav.classList.remove("show")
+        }
+    })
+</script>
+          
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+      <!-- Default Statcounter code for danux.me http://www.danux.me -->
+<script type="text/javascript">
+var sc_project=12249368; 
+var sc_invisible=1; 
+var sc_security="0160819f"; 
+var sc_https=1; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12249368/0/0160819f/1/" alt="Web Analytics Made
+Easy - StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+    
+    </body>
+</html>

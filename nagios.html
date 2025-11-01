@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nagios: Nagios XI Infrastructuring Monitoring Software</title>
+    <meta name="description" content="Dan Benner is a Nielsen Norman Master Certified UX Strategist, UX Product Designer, and UX Researcher Minneapolis St Paul Minnesota or Remote">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto:300,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://kit.fontawesome.com/4dcdc8568a.js" crossorigin="anonymous"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-3285885-8', 'auto');
+      ga('send', 'pageview');
+    </script>
+        
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1524932,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>    
+
+        <!--  MS Clarity -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "sdtdy4gu9r");
+    </script>  
+      
+  </head>
+    
+  <body>
+       
+    <header>
+        <nav class="navbar fixed-top navbar-light" style="background-color: #EDEEF0;">
+            <div class="container">
+                <div class="nav-button text-center">
+                    <img src="img/10_nav_images/nav_button_default.svg" class="navbar-toggler nav-border" data-toggle="collapse" data-target="#navbarNavDropdown" >
+            <!--        <i class="fas fa-adjust" data-toggle="collapse" data-target="#navbarNavDropdown" ></i>  -->
+               <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                -->
+                </div>    
+                  <div class="collapse navbar-collapse custom-collapse" id="navbarNavDropdown">
+                    <div class="custom-nav nav-box-shadow">
+                        <div class="row mt-3">
+                            <div class="col-md-2 mb-3">
+                                <a class="nav-header-text" href="index.html">Home</a>
+                            </div>     
+                                     
+                            <div class="col-md-3 mb-3">
+                                <span class="nav-header-text">Work</span>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="bestbuy.html">Best Buy</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/biworldwide.html">BI Worldwide</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/2chs.html">CHS</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/coach.html">Coach</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/dhhs.html">Dept. of Health<br>and Human Services</a>                                
+                            </div> 
+                            
+                            <div class="col-md-3 mb-3">
+                                    <span class="nav-header-text"></span>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/droneup.html">DroneUp</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/ey.html">EY</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/surgical.html">Intuitive Surgical</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/kudo.html">KUDO</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/nagios.html">Nagios</a>
+                                    <a class="dropdown-item nav-project-text p-0 pt-2" href="/pointclickcare.html">PointClickCare</a>
+                            </div>         
+                                                      
+                            <div class="col-md-2">
+                                <a class="nav-header-text" href="about.html">About</a>
+                            </div> 
+                            <div class="col-md-2">
+                                <a class="nav-header-text" data-toggle="modal" data-target="#exampleModalCenter">Contact</a>
+                                <h5 class="mt-2">
+                                    benner.dan@gmail.com<br>
+                                    843.504.7221<br>
+                                </h5>
+                            </div>    
+                        </div>      
+                    </div>  
+                  </div>
+            </div>
+          </nav>
+    </header>
+
+        <section class="pt-4">
+            <div class="custom-container mt-5">
+                <div class="row case_study_container box-shadow">
+                    <div class="col-md-7">
+                        
+                        <div class="animated fadeIn card-animation-fourth mb-2">
+                        <img class="corner_img" src="img/06_nagios/00_lead.png" style="width:100%;">
+                        </div>
+                        
+                        <div class="animated fadeIn card-animation-eighth mb-2">
+                        <img class="corner_img" src="img/06_nagios/01-clients.jpg" style="width:100%;">
+                        </div>
+                        
+                        <div class="animated fadeIn card-animation-eighth mb-2">
+                            <video width="100%" controls poster="img/06_nagios/02-NagiosAnthemPoster.jpg">
+                                <source class="corner_img" src="img/06_nagios/Nagios%20Anthem%20EDIT.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                            
+                        <div class="animated fadeIn card-animation-eighth mb-2 caption_photo">
+                            <a class="artifacts-text" href="img/06_nagios/00-mock1.png" target="_blank">                       
+                            <img class="corner_img" src="img/06_nagios/00-mock1.png" style="width:100%;">
+                            <span class="caption_bottom_left reverse-text">Redesigned Home Page</span>
+                            </a>
+                        </div>                   
+                            
+                        <div class="animated fadeIn card-animation-eighth mb-2 caption_photo">
+                            <img class="corner_img" src="img/06_nagios/05-NOC_center.png" style="width:100%;">
+                        <span class="caption_bottom_left reverse-text">An example of a Network Operations Center (or "NOC"), where large networks are monitored</span>
+                        </div>                
+                                
+                        <div class="animated fadeIn card-animation-eighth mb-2 caption_photo">
+                        <a class="artifacts-text" href="img/06_nagios/06-complexdomainsdefined.jpg" target="_blank">                       
+                            <img class="corner_img" src="img/06_nagios/06-complexdomainsdefined.jpg" style="width:100%;">
+                            </a>
+                        </div>
+                            
+                        <div class="animated fadeIn card-animation-eighth mb-2 caption_photo">
+                        <a class="artifacts-text" href="img/06_nagios/07_user_archetypes.jpg" target="_blank">                       
+                            <img class="corner_img" src="img/06_nagios/07_user_archetypes.jpg" style="width:100%;">
+                            </a>
+                        </div>
+                                     
+                        <div class="animated fadeIn card-animation-eighth mb-2 caption_photo">
+                        <a class="artifacts-text" href="img/06_nagios/00-mock2.jpg" target="_blank">                       
+                            <img class="corner_img" src="img/06_nagios/00-mock2.jpg" style="width:100%;">
+                            <span class="caption_bottom_left">Redesigned Auto-Configurations</span>
+                            </a>
+                        </div>
+                            
+                        <div class="animated fadeIn card-animation-eighth mb-2 caption_photo">
+                        <a class="artifacts-text" href="img/06_nagios/09-complexitylandscape.png" target="_blank">                       
+                            <img class="corner_img" src="img/06_nagios/09-complexitylandscape.png" style="width:100%;">
+                            </a>
+                            </div>
+                            
+                        <div class="animated fadeIn card-animation-eighth mb-2 caption_photo">
+                        <a class="artifacts-text" href="img/06_nagios/10-workdomainanalysis.jpg" target="_blank">                       
+                            <img class="corner_img" src="img/06_nagios/10-workdomainanalysis.jpg" style="width:100%;">
+                            </a>
+                            </div>
+                            
+                        <div class="animated fadeIn card-animation-eighth mb-2 caption_photo">
+                        <a class="artifacts-text" href="img/06_nagios/11-ModifiedHeuristics.png" target="_blank">                       
+                            <img class="corner_img" src="img/06_nagios/11-ModifiedHeuristics.png" style="width:100%;">
+                            </a>
+                        </div>
+                            
+                        <div class="animated fadeIn card-animation-eighth mb-2 caption_photo">
+                        <a class="artifacts-text" href="img/06_nagios/00-mock3.jpg" target="_blank">                       
+                            <img class="corner_img" src="img/06_nagios/00-mock3.jpg" style="width:100%;">
+                            <span class="caption_bottom_left">Redesign of the expert user section–The "CM"</span>
+                            </a>
+                            </div>
+                                                        
+                    </div>
+
+
+
+
+
+                    <div class="animated fadeIn card-animation-sixth col-md-5 pl-4">
+
+
+                        <h2>Nagios</h2>
+                        <h3>Nagios XI IT Network Monitoring Software</h3>
+                        <br>
+
+                       <h5><p>Nagios XI is an extensible (open source) application that 
+                           <strong>allows system administrators to check on the health of their network</strong>—websites, 
+                           servers, hardware, software, and any cloud-based resource. 
+                           </p>
+                        </h5>
+                    
+                        <h5>
+                        <p>The Nagios XI software is in use worldwide by airlines, biotech companies, defense contractors and systems, emergency services, energy companies, enterprise retailers, 
+                            governments and other organizations that require high transactional speed and accuracy on load times 
+                            and data exchanges. 
+                        </p>
+                            
+                        <p>Nagios XI can monitor the overall health of the network, as well as individual endpoints— 
+                            network "objects" such as inventory application servers, temperature gauge data within a nuclear reactor core, 
+                            an employees' work-issued mobile phones or
+                            point-of-sale credit card scanners used in department stores.
+                        </p>    
+                            </h5>
+                            <br>
+                        
+                            <h4>Objective</h4>
+                            <h5>Transform a well-known engineer-grown product to a "customer-first" strategy.</h5>
+                            <br>
+                        
+                
+                            <h4>Outcome</h4>
+                            <h5>The client and tech support feedback from new users was that the redesigned 
+                                system is easier to learn. Long-time, expert users found the navigation cleanup helpful, and was happy to see the 
+                                Core Configurator (an expert component) remained largely the same, but with
+                                updated UI and visual design. The system had evolved, but based on the 
+                                timeframe and budget, had not addressed the unmet needs 
+                                of the most sophisticated clients.</h5>
+                            <br>
+                        
+                            <h4>Deliverables</h4>
+                                <h5>
+                                <a class="artifacts-text" href="https://drive.google.com/file/d/1ZSiVdxZWauJZWdIKd3ZfN_ofZAThG2-V/view?usp=sharing" target="_blank">
+                                            Heuristic Analysis (Global).pdf</a>                              
+                                </h5>
+                        
+                                <h5>
+                                <a class="artifacts-text" href="https://drive.google.com/file/d/1eTvZykbB7uFbe_W1aYhwTRRZdfq37brj/view?usp=sharing" target="_blank">
+                                            Heuristic Analysis (Page-Level).pdf</a>                              
+                                </h5>
+
+                                <h5>
+                                <a class="artifacts-text" href="https://drive.google.com/file/d/1AARMCsXFsQRhd8tglIZ1Ln68q-KpK1aB/view?usp=sharing" target="_blank">
+                                            Wireframes / Information Architecture.pdf</a>                              
+                                </h5>
+                        
+                                <h5>
+                                <a class="artifacts-text" href="https://drive.google.com/file/d/1D91y8cfkM7PGY8z1l80j-TYKZzEsy5wm/view?usp=sharing" target="_blank">
+                                            Visual Design for Desktop.pdf</a>                              
+                                </h5>
+                                
+                        
+                                <h5>
+                                <a class="artifacts-text" href="https://drive.google.com/file/d/16B62OUtO__dliZivZFkOCx2ueQO7MoPj/view?usp=sharing" target="_blank">
+                                            Visual Design Prototype for Homepage.mp4</a>                              
+                                </h5>
+                               
+           
+                                <br>
+                        
+                        <a class="btn-case-study bby_btn" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Read more &#9658;
+                        </a>
+                        
+                        <div class="collapse" id="collapseExample1">
+                            <div class="case-study-card-body">
+        
+
+                            <h4>Goals</h4>
+                            <h5>Engagement, Productivity, Sales, Simplify Onboarding</h5>              
+                             <br>
+                                
+                            <h4>Research Methodologies</h4>
+                            <h5><ul>
+                                <li>Work-Domain Analysis (remote)</li>
+                                <li>Contextual Interviews</li>
+                                <li>Customer and Tech Support Interviews</li>
+                                <li>Heuristic Analysis (Global and Page-Level)</li>
+                                </ul>
+                            </h5>
+                            <br>   
+
+                            <h4>Challenges</h4>
+                            <h5>
+                               <p>My understanding of network monitoring was somewhat limited going into the
+                                    project, but after some exploration (see "IT Network Monitoring 101 Deck" in Artifacts below),
+                                    things moved quickly and efficiently. 
+                                   The client was very focused on maturing the user 
+                                   experience, and was willing to adapt and rework as needed,
+                                   so little stood in the way of designing better UX.</p>
+                                
+                                <p>The client had well-documented data supporting the difficult 
+                                    onboarding of new users. Throughout all the redesign, 
+                                    we constantly evaluated what new users (compared to experts)
+                                    with respect to navigation, help features, and primary, 
+                                    secondary and automated tasks. I created some archetypes (Learner, Legend and Legacy)
+                                    to help us evaluate the test designs.</p>
+                                
+                                <p>During the discovery phase, we received a lot of feedback 
+                                    from long-time users (Legacy archetype) concerning the
+                                    system's ability to accommodate their size requirements. 
+                                    (As shown <a style="text-decoration: underline;" href="https://drive.google.com/file/d/1Dj3YDXgdCnz_2JRSCDZHPVt3FAWjpzxy/view?usp=sharing" target="_blank">here</a>
+                                    , one 3,000-store grocery chain in Belgium said some reports and visualizations would take
+                                    days to process, or be unable to be viewable at all.)
+                                    We did have to report to the client the technology 
+                                    shortcomings, as well as refocus the 
+                                    conversations toward aspects we could improve in the 
+                                    information architecture / within project scope. </p>
+                            </h5>
+                            <br>
+                 
+                            <h4>Team</h4>
+                            <h5>I'd primarily worked with the client strategist/subject 
+                                matter expert and their Chief Technology Officer in daily 
+                                work sessions. Other roles on the team included: UX Research Lead (myself), 
+                                Information Architect (myself), Project Manager, IT Network 
+                                Subject Matter Expert, Visual Designer. 
+                            </h5>
+                            <br> 
+                                
+                            <h4>Next Steps</h4>
+                            <h5><ul>
+                                <li>Field Study</li>
+                                <li>Tree Test Navigation</li>
+                                <li>Reevaluate Frequently Used Dashlets (Embedded Components)</li>
+                                </ul>
+                            </h5>
+                            <br>   
+
+
+                            <h4>Final Analysis </h4>
+                            <h5>
+                                <p>The client had all the right "ingredients" in the application from the start.  
+                                    And even better, they had the ideal mindset about the need to 
+                                    modernize and make the application more usable. 
+                                </p>
+                            
+                                <p>The client strategy lead and client tech lead were smart, 
+                                    cooperative, articulate and I brought the third pillar 
+                                    that was missing. I acted as a facilitator, information 
+                                    mapper, conceptual visualizer and UX best practices advocate. 
+                                    As a partnership, we were the right mix of ambition and practicality to move the application forward.
+                                </p>
+                            
+                                <p>Every collaboration session was energetic, swift-moving 
+                                    and they were thrilled with the type of usability clarity 
+                                    I brought with the lens of Nielsen's Heuristics.
+                                </p>
+                                                            
+                                <p> Collectively, we moved their trusted, feature-rich application 
+                                    into a modern space. And our "three in a box" team brought 
+                                    the project in around 60% under budget.
+                                </p>
+                                         
+                            
+                            
+                            </h5>
+
+
+
+                            <h4>Supporting Artifacts</h4>
+                            <h5>
+                                    <a class="artifacts-text" href="https://drive.google.com/file/d/1duqdEk1gacflWkU9BQ51oyDmGqEHfNYR/view?usp=sharing" target="_blank">
+                                        Stakeholder Questions.pdf</a><br>
+
+                                    <a class="artifacts-text" href="https://drive.google.com/file/d/18-bIVQKih_sy2d9J4lu3N7NdJ_HTC-8X/view?usp=sharing" target="_blank">
+                                        "Before" Screenshots.pdf</a><br>
+                                
+                                    <a class="artifacts-text" href="https://drive.google.com/file/d/1k4JkB28Zim00nH4MRlixTu5-4ubP2Af_/view?usp=sharing" target="_blank">
+                                        IT Network Monitoring 101.pdf</a><br>
+                                
+                                    <a class="artifacts-text" href="https://drive.google.com/file/d/1RwCebn2kKPolY30gD_FP8Q2WKd8BmGnY/view?usp=sharing" target="_blank">
+                                        Nagios System Actions Mapping.pdf</a><br>
+
+                                   <!-- <a class="artifacts-text" href="#" target="_blank">
+                                            Complexity Analysis.pdf</a><br> -->
+
+                            </h5>
+                            <br>
+     
+                    <!-- End Accordion Card-->                 
+                    </div>
+                    </div>          
+
+                    <!-- End Text Column-->                 
+                    </div>
+                </div>
+            </div>   
+        </section>      
+            
+            
+    
+
+
+
+    <section>
+        <div class="end-page-margin"> </div>    
+    </section> 
+
+      
+
+<script>
+    let body = document.querySelector("body")
+    let nav = document.querySelector(".custom-collapse")
+    let toggler = document.querySelector(".navbar-toggler")
+
+    body.addEventListener("click", function(){
+        if(event.target===toggler){
+            return
+        }
+        else{
+            nav.classList.remove("show")
+        }
+    })
+</script>
+          
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+      <!-- Default Statcounter code for danux.me http://www.danux.me -->
+<script type="text/javascript">
+var sc_project=12249368; 
+var sc_invisible=1; 
+var sc_security="0160819f"; 
+var sc_https=1; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12249368/0/0160819f/1/" alt="Web Analytics Made
+Easy - StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+    
+    </body>
+</html>

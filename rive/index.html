@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rive Stack with Confetti Variants</title>
+</head>
+<body style="margin: 0; background-color: #ffffff; font-family: sans-serif;">
+
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 40px; padding: 40px 0;">
+
+    <!-- PRIZE -->
+    <canvas id="prize-canvas" width="240" height="300"></canvas>
+
+    <!-- CONFETTI -->
+    <div style="text-align: center;">
+      <div>confetti.riv</div>
+      <canvas id="confetti-canvas" width="240" height="300"></canvas>
+    </div>
+
+    <div style="text-align: center;">
+      <div>confettiv2.riv</div>
+      <canvas id="confettiv2-canvas" width="240" height="300"></canvas>
+    </div>
+
+    <div style="text-align: center;">
+      <div>confettiv2_1.riv</div>
+      <canvas id="confettiv2_1-canvas" width="240" height="300"></canvas>
+    </div>
+
+    <div style="text-align: center;">
+      <div>confettiv2_2.riv</div>
+      <canvas id="confettiv2_2-canvas" width="240" height="300"></canvas>
+    </div>
+
+    <!-- ARTIST -->
+    <canvas id="artist-canvas" width="240" height="300"></canvas>
+
+    <!-- DOG -->
+    <canvas id="dog-canvas" width="240" height="300"></canvas>
+
+    <!-- BUTTON -->
+    <canvas id="button-canvas" width="240" height="300" style="cursor: pointer;"></canvas>
+  </div>
+
+  <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+  <script>
+    // PRIZE
+    new rive.Rive({
+      src: 'prize.riv',
+      canvas: document.getElementById('prize-canvas'),
+      autoplay: true,
+    });
+
+    // CONFETTI STACK
+    new rive.Rive({
+      src: 'confetti.riv',
+      canvas: document.getElementById('confetti-canvas'),
+      autoplay: true,
+    });
+
+    new rive.Rive({
+      src: 'confettiv2.riv',
+      canvas: document.getElementById('confettiv2-canvas'),
+      autoplay: true,
+    });
+
+    new rive.Rive({
+      src: 'confettiv2_1.riv',
+      canvas: document.getElementById('confettiv2_1-canvas'),
+      autoplay: true,
+    });
+
+    new rive.Rive({
+      src: 'confettiv2_2.riv',
+      canvas: document.getElementById('confettiv2_2-canvas'),
+      autoplay: true,
+    });
+
+    // ARTIST (loop 5x)
+    let artistCount = 0;
+    const artist = new rive.Rive({
+      src: 'artist.riv',
+      canvas: document.getElementById('artist-canvas'),
+      autoplay: false,
+      onLoad: () => artist.play(),
+      onStateChange: (e) => {
+        if (e.data === 'idle') {
+          artistCount++;
+          if (artistCount < 5) artist.play();
+        }
+      }
+    });
+
+    // DOG (loop 5x)
+    let dogCount = 0;
+    const dog = new rive.Rive({
+      src: 'dog.riv',
+      canvas: document.getElementById('dog-canvas'),
+      autoplay: false,
+      onLoad: () => dog.play(),
+      onStateChange: (e) => {
+        if (e.data === 'idle') {
+          dogCount++;
+          if (dogCount < 5) dog.play();
+        }
+      }
+    });
+
+    // BUTTON (state machine can be added later)
+    new rive.Rive({
+      src: 'button.riv',
+      canvas: document.getElementById('button-canvas'),
+      autoplay: true,
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Rive Button Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body { display: grid; place-items: center; background:#fafafa; }
+    canvas { width: 280px; height: 120px; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,.08); background:#fff; }
+  </style>
+</head>
+<body>
+  <canvas id="riveCanvas" width="560" height="240" aria-label="Rive button"></canvas>
+
+  <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+  <script>
+    const canvas = document.getElementById('riveCanvas');
+
+    // Hi-DPI
+    function fitDPR() {
+      const dpr = Math.max(1, Math.min(window.devicePixelRatio || 1, 2));
+      const w = canvas.clientWidth, h = canvas.clientHeight;
+      canvas.width = Math.round(w * dpr);
+      canvas.height = Math.round(h * dpr);
+    }
+    fitDPR(); addEventListener('resize', fitDPR);
+
+    let rive, hoverInput, clickInput;
+
+    function getInputByName(inputs, name) {
+      return inputs.find(i => i.name === name);
+    }
+
+    rive = new Rive({
+      canvas,
+      src: 'button_with_logic.riv',
+      autoplay: true,
+      stateMachines: 'State Machine 1',
+      onLoad: () => {
+        const inputs = rive.stateMachineInputs('State Machine 1') || [];
+        hoverInput = getInputByName(inputs, 'Hover');
+        clickInput = getInputByName(inputs, 'Click');
+        rive.resizeDrawingSurfaceToCanvas();
+        console.log('[Rive] Inputs:', inputs.map(i => ({ name: i.name, type: i.type })));
+      },
+    });
+
+    function setHover(v) {
+      if (hoverInput && typeof hoverInput.value === 'boolean') hoverInput.value = v;
+    }
+    function fireClick() {
+      if (clickInput && typeof clickInput.fire === 'function') {
+        clickInput.fire();
+      } else if (clickInput && typeof clickInput.value === 'boolean') {
+        clickInput.value = true; setTimeout(() => clickInput.value = false, 80);
+      }
+    }
+
+    canvas.addEventListener('pointerenter', () => setHover(true));
+    canvas.addEventListener('pointerleave', () => setHover(false));
+    canvas.addEventListener('pointerdown',  (e) => { e.preventDefault(); fireClick(); });
+
+    // Touch = hover+click
+    canvas.addEventListener('touchstart', (e) => { e.preventDefault(); setHover(true); fireClick(); }, { passive:false });
+    canvas.addEventListener('touchend',   () => setHover(false));
+
+    // Keyboard
+    canvas.tabIndex = 0;
+    canvas.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fireClick(); }
+    });
+  </script>
+</body>
+</html>
