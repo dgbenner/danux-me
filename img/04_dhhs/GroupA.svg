@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Client-Page---Organ-Donor" transform="translate(-186.000000, -2537.000000)">
+            <g id="Group" transform="translate(186.000000, 2537.000000)">
+                <circle id="Oval-2" fill="#FFFFFF" cx="41" cy="41" r="41"></circle>
+                <g id="Page-1" transform="translate(13.000000, 21.000000)" stroke="#99D8E7" stroke-width="1.767">
+                    <g id="Group-9" transform="translate(0.000000, 0.058500)">
+                        <polyline id="Stroke-1" points="37.5318 7.0631 49.5348 7.0631 54.9168 18.5891 43.0028 18.5891"></polyline>
+                        <polyline id="Stroke-3" points="11.971 18.5891 0.388 18.5891 5.769 7.0631 17.442 7.0631"></polyline>
+                        <polyline id="Stroke-5" points="1.3726 19.585 1.3726 35.966 53.9316 35.966 53.9316 19.585"></polyline>
+                        <polygon id="Stroke-7" points="27.6519 0.0283 45.6409 12.9093 27.6519 12.9093 9.6639 12.9093"></polygon>
+                    </g>
+                    <polyline id="Stroke-10" points="15.5738 13.1152 27.6528 4.7922 39.7308 13.1152"></polyline>
+                    <polyline id="Stroke-11" points="12.1343 17.4822 12.1343 36.0242 43.1703 36.0242 43.1703 17.4822"></polyline>
+                    <polygon id="Stroke-12" points="0.026 40.1745 55.277 40.1745 55.277 36.0245 0.026 36.0245"></polygon>
+                    <polygon id="Stroke-14" points="10.52 16.9425 44.784 16.9425 44.784 12.9655 10.52 12.9655"></polygon>
+                    <g id="Group-23" transform="translate(16.000000, 9.058500)">
+                        <path d="M0.3966,26.4283 L0.3966,16.8643 C0.3966,15.6543 1.3766,14.6713 2.5806,14.6713 C3.7846,14.6713 4.7636,15.6543 4.7636,16.8643 L4.7636,26.4283" id="Stroke-15"></path>
+                        <path d="M9.2755,26.4283 L9.2755,16.8643 C9.2755,15.6543 10.2555,14.6713 11.4595,14.6713 C12.6635,14.6713 13.6425,15.6543 13.6425,16.8643 L13.6425,26.4283" id="Stroke-17"></path>
+                        <path d="M18.1542,26.4283 L18.1542,16.8643 C18.1542,15.6543 19.1342,14.6713 20.3382,14.6713 C21.5422,14.6713 22.5222,15.6543 22.5222,16.8643 L22.5222,26.4283" id="Stroke-19"></path>
+                        <path d="M11.1279,0.0457 L11.1279,2.0267" id="Stroke-21"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

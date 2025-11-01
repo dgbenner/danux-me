@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Client-Page---Organ-Donor" transform="translate(-756.000000, -2537.000000)">
+            <g id="Group-3" transform="translate(756.000000, 2537.000000)">
+                <circle id="Oval-2-Copy-2" fill="#FFFFFF" cx="41" cy="41" r="41"></circle>
+                <g id="Page-1" transform="translate(15.000000, 17.000000)" stroke="#99D8E7" stroke-width="2.627">
+                    <polyline id="Stroke-1" points="10.668096 41.7872625 9.596736 42.8385542 0.914496 45.3551375 3.477696 36.8355542 4.549056 35.7833042"></polyline>
+                    <polygon id="Stroke-3" points="34.229088 6.6587875 4.600608 35.7317458 10.715808 41.7328292 40.345248 12.6589125"></polygon>
+                    <g id="Group-8" transform="translate(29.760000, 0.251179)">
+                        <polyline id="Stroke-4" points="0.338592 10.4604958 8.584992 2.3692875 14.702112 8.36845417 6.453792 16.4615792"></polyline>
+                        <path d="M14.549376,8.5177625 L16.664256,6.44297083 C17.198016,5.9187625 17.198016,5.0677625 16.663296,4.5445125 L12.483456,0.4418875 C11.948736,-0.0823208333 11.082816,-0.0823208333 10.548096,0.442845833 L8.434176,2.51667917" id="Stroke-6" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
